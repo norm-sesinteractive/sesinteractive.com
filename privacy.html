@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Notice | SES Interactive</title>
+<meta name="description" content="Privacy notice for sesinteractive.com from Someone Else's Shoes Interactive LLC.">
+<link rel="icon" type="image/svg+xml" href="SES_Favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --orange: #E8702A;
+  --orange-hover: #F08A4A;
+  --teal: #2EC4B6;
+  --near-white: #FDFFFC;
+  --bg: #0F0F12;
+  --bg-elevated: #16161B;
+  --surface: #1C1C24;
+  --border: #2A2A35;
+  --text: #F5F5F0;
+  --text-2: #A8A8A0;
+  --text-3: #6E6E66;
+  --display: 'Crimson Pro', Georgia, serif;
+  --body: 'DM Sans', system-ui, sans-serif;
+  --xs: 0.5rem;
+  --sm: 1rem;
+  --md: 1.5rem;
+  --lg: 2.5rem;
+  --xl: 4rem;
+  --xxl: 6rem;
+  --xxxl: 9rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 var(--md);
+  position: relative;
+  z-index: 2;
+}
+.wrap.narrow { max-width: 740px; }
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  padding: var(--sm) 0;
+  background: rgba(15, 15, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, background 0.3s;
+}
+.nav.scrolled {
+  background: rgba(15, 15, 18, 0.92);
+  border-bottom-color: var(--border);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--md);
+}
+.nav-logo {
+  height: 36px;
+  width: auto;
+  transition: transform 0.2s;
+}
+.nav-logo:hover { transform: scale(1.03); }
+.nav-links {
+  display: flex;
+  gap: var(--lg);
+  list-style: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.nav-links a {
+  color: var(--text-2);
+  position: relative;
+  padding: var(--xs) 0;
+  transition: color 0.2s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--teal);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a:hover::after { width: 100%; }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+}
+
+.doc-hero {
+  padding: calc(var(--xxxl) + var(--xl)) 0 var(--xl);
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.doc-hero::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: -10%;
+  width: 50%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, rgba(46, 196, 182, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.doc-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--xs);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: var(--lg);
+  transition: color 0.2s, gap 0.2s;
+}
+.doc-back::before { content: '←'; }
+.doc-back:hover {
+  color: var(--orange);
+  gap: var(--sm);
+}
+.doc-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: var(--md);
+  display: flex;
+  align-items: center;
+  gap: var(--sm);
+}
+.doc-eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+.doc-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: var(--md);
+  max-width: 18ch;
+}
+.doc-meta {
+  font-size: 0.875rem;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--md);
+}
+.doc-intro {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-2);
+  max-width: 60ch;
+}
+
+.doc-main {
+  padding: var(--xxl) 0;
+}
+.doc-section {
+  margin-bottom: var(--xl);
+}
+.doc-section:last-child { margin-bottom: 0; }
+.doc-section h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin-bottom: var(--md);
+  color: var(--text);
+  display: flex;
+  align-items: baseline;
+  gap: var(--sm);
+}
+.doc-section h2 .num {
+  font-family: var(--body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  flex-shrink: 0;
+  min-width: 2ch;
+}
+.doc-section p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-2);
+  margin-bottom: var(--md);
+}
+.doc-section p:last-child { margin-bottom: 0; }
+.doc-section strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.doc-section ul {
+  list-style: none;
+  margin: var(--md) 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs);
+}
+.doc-section ul li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-2);
+}
+.doc-section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+.doc-section a {
+  color: var(--orange);
+  border-bottom: 1px solid rgba(232, 112, 42, 0.3);
+  transition: border-color 0.2s;
+}
+.doc-section a:hover { border-bottom-color: var(--orange); }
+
+.footer {
+  padding: var(--lg) 0;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--md);
+  font-size: 0.8125rem;
+  color: var(--text-3);
+  letter-spacing: 0.03em;
+}
+.footer-inner a {
+  color: var(--text-2);
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  margin-left: var(--sm);
+}
+.footer-inner a:hover {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+@media (max-width: 640px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" aria-label="SES Interactive Home">
+      <img src="SES_Interactive_Logo.svg" alt="SES Interactive" class="nav-logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#games">Games</a></li>
+      <li><a href="index.html#studio">Studio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="doc-hero">
+  <div class="wrap narrow">
+    <a href="index.html" class="doc-back">Back to SES Interactive</a>
+    <p class="doc-eyebrow">For visitors</p>
+    <h1 class="doc-title">Privacy Notice</h1>
+    <p class="doc-meta">Last updated: May 25, 2026</p>
+    <p class="doc-intro">
+      This notice describes what information is collected when you visit sesinteractive.com or contact us, and how that information is used.
+    </p>
+  </div>
+</header>
+
+<main class="doc-main">
+  <div class="wrap narrow">
+
+    <section class="doc-section">
+      <h2><span class="num">01</span> Who we are</h2>
+      <p>
+        Someone Else's Shoes Interactive LLC ("SES Interactive," "we," "us") is a Michigan-based independent game studio. We can be contacted at <a href="mailto:hello@sesinteractive.com">hello@sesinteractive.com</a>.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">02</span> What this site collects</h2>
+      <p>
+        The sesinteractive.com website is a static information site. It does not set cookies, run analytics, collect personal information through forms or logins, track your browsing activity, or display advertisements.
+      </p>
+      <p>
+        When you visit, your browser exchanges some technical information with the server hosting the site (GitHub Pages), including your IP address, the page you requested, your user agent string, and timing. This is standard for any web browsing and is logged by GitHub for operational and security purposes per their own privacy policy.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">03</span> Third-party services</h2>
+      <p>
+        To display the site, your browser loads a few resources from third parties:
+      </p>
+      <ul>
+        <li><strong>Google Fonts.</strong> Font files are loaded from fonts.googleapis.com when you open a page. This means Google's servers see your IP address and basic browser information. We don't have control over what Google logs from these requests. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a> for Google's privacy policy.</li>
+      </ul>
+      <p>
+        These are the only third-party resources currently loaded by the site.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">04</span> If you email us</h2>
+      <p>
+        If you send a message to <a href="mailto:hello@sesinteractive.com">hello@sesinteractive.com</a> or any other studio email address, that email is received and stored in Google Workspace, operated by Google LLC. We retain the content of correspondence as needed to respond, maintain records, and prevent abuse. We don't share your email content with anyone outside the studio without your permission.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">05</span> External links</h2>
+      <p>
+        The site contains links to other websites, including our games' product sites, the LinkedIn profile of our founder, and potentially press coverage or partner sites in the future. Once you click a link to a third-party site, that site's own privacy policy applies. We don't control what those sites do.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">06</span> Children</h2>
+      <p>
+        The site is not directed at children under 13. We don't knowingly collect personal information from children. If you believe we've inadvertently received information from a child under 13, contact us and we'll delete it.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">07</span> Your rights</h2>
+      <p>
+        If we have information about you, typically because you've emailed us or signed up for one of our game programs, you can:
+      </p>
+      <ul>
+        <li>Request a copy of what we have</li>
+        <li>Request that we correct or delete it</li>
+        <li>Request that we stop using it for any purpose</li>
+      </ul>
+      <p>
+        Email <a href="mailto:hello@sesinteractive.com">hello@sesinteractive.com</a> with the request and we'll respond within a reasonable time. Depending on your jurisdiction, you may have additional rights under laws like the General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA). We honor these regardless of where you're located.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">08</span> Game-specific programs</h2>
+      <p>
+        If you participate in a closed playtest, beta program, or other testing program for one of our games, additional terms specific to that program will apply. Those terms cover what information is collected as part of the program and how it's used.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">09</span> Changes to this notice</h2>
+      <p>
+        We may update this notice as the studio's activities evolve. The "Last updated" date at the top reflects the most recent revision. Significant changes will be noted at the top of the page or, where appropriate, communicated by email.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <h2><span class="num">10</span> Contact</h2>
+      <p>
+        Questions about this notice or your information: <a href="mailto:hello@sesinteractive.com">hello@sesinteractive.com</a>.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; 2026 Someone Else's Shoes Interactive LLC. All rights reserved. <a href="privacy.html">Privacy</a></p>
+    <p>Crafted in Michigan.</p>
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById('nav');
+let scrolled = false;
+window.addEventListener('scroll', () => {
+  const s = window.scrollY > 20;
+  if (s !== scrolled) {
+    nav.classList.toggle('scrolled', s);
+    scrolled = s;
+  }
+}, { passive: true });
+</script>
+</body>
+</html>
